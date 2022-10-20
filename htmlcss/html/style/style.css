@@ -1,0 +1,17 @@
+p{
+    color : red;
+}
+
+td,th{
+    border : 1px solid;
+}
+
+table{
+    border-collapse;
+    font-size: 30px;
+}
+
+textarea{
+    width: 230px;
+    height: 150px;
+}

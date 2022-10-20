@@ -1,0 +1,184 @@
+body{
+    width: 785px;
+    background-image: url(./187161.jpg) ;
+}
+.haut{
+    background-color: purple;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+.menu{
+    background-color: blue;
+    height: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.pz1{
+    float: left;
+    background-color: orangered;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px ;
+    margin-bottom: 1px ;
+    width: 190px;
+    height: 150px;
+}
+.pz2{
+    float: left;
+    background-color: orangered;
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 5px ;
+    margin-bottom: 1px ;
+    width: 190px;
+    height: 150px;
+}
+.pz5{
+        float: left;
+        background-color: rgb(186, 217, 9);
+        margin-left: 0px;
+        margin-top: 5px;
+        margin-right: 5px ;
+        margin-bottom: 1px ;
+        width: 190px;
+        height: 150px;
+}
+.pz6{
+    float: left;
+    background-color: rgb(186, 217, 9);
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 5px ;
+    margin-bottom: 1px ;
+    width: 190px;
+    height: 150px;
+}
+.pz3{
+    float: left;
+    background-color: orangered;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px ;
+    margin-bottom: 1px ;
+    width: 190px;
+    height: 150px;
+}
+.pz4{
+    float: left;
+    background-color: orangered;
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 5px ;
+    margin-bottom: 1px ;
+    width: 190px;
+    height: 150px;
+}.pz7{
+    float: left;
+    background-color: rgb(186, 217, 9);
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 5px ;
+    margin-bottom: 1px ;
+    width: 190px;
+    height: 150px;
+}.pz8{
+    float: left;
+    background-color: rgb(186, 217, 9);
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 5px ;
+    margin-bottom: 1px ;
+    width: 190px;
+    height: 150px;
+}
+.pz9{
+    float: left;
+    background-color: rgb(16, 217, 9);
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px ;
+    margin-bottom: 1px ;
+    width: 190px;
+    height: 150px;
+}
+.pz10{
+    float: left;
+    background-color: rgb(16, 217, 9);
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 5px ;
+    margin-bottom: 1px ;
+    width: 190px;
+    height: 150px;
+}.pz13{
+    float: left;
+    background-color: rgb(131, 72, 9);
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 5px ;
+    margin-bottom: 1px ;
+    width: 190px;
+    height: 150px;
+}.pz14{
+    float: left;
+    background-color: rgb(131, 72, 9);
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 5px ;
+    margin-bottom: 1px ;
+    width: 190px;
+    height: 150px;
+}
+.pz11{
+    float: left;
+    background-color: rgb(16, 217, 9);
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px ;
+    margin-bottom: 1px ;
+    width: 190px;
+    height: 150px;
+}.pz12{
+    float: left;
+    background-color: rgb(16, 217, 9);
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 5px ;
+    margin-bottom: 1px ;
+    width: 190px;
+    height: 150px;
+}
+.pz15{
+    float: left;
+    background-color: rgb(131, 72, 9);
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 5px ;
+    margin-bottom: 1px ;
+    width: 190px;
+    height: 150px;
+}
+.pz16{
+    float: left;
+    background-color: rgb(131, 72, 9);
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 5px ;
+    margin-bottom: 1px ;
+    width: 190px;
+    height: 150px;
+}
+.bas{
+    float: left;
+    background-color:gray;
+    width: 100%;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 10px;
+}

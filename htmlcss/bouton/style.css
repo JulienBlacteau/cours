@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+.bouton{
+    border: solid 2px black;
+    background-color: red;
+    color: white;
+    width: 50%;
+    height: 50px;
+    line-height: 45px;
+    margin: auto;
+    margin-top: 15rem;
+}
+
+.bouton:hover{
+    background-color: yellow;
+    color: black;
+    opacity: 70%;
+}

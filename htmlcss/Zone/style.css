@@ -1,0 +1,30 @@
+.p1{
+    background-color: red;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+.p2{
+    background-color: blue;
+    float: left;
+    width: 20%;
+    height: 800px;
+    margin-top: 0%;
+}
+
+.p3{
+    background-color: greenyellow;
+    float: left;
+    height: 800px;
+    width: 60%;
+    margin-top: 0%;
+
+}
+.p4{
+    background-color: rgb(183, 121, 62);
+    float: left;
+    width: 20%;
+    height: 800px;
+    margin-top: 0%;
+}

@@ -1,0 +1,30 @@
+.couleur_bleue{
+    color:blue
+}
+#para_2{
+    color:rgb(117, 4, 4)
+}
+.container{
+    font-style: italic;
+}
+.souligne{
+    text-decoration: underline;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.petal{
+    border: 1px solid #000;
+}
+.p1{
+    float: left;
+}
+.p2{
+    border: 3px solid #883333;
+    margin: 10px;
+    float: right;
+}
+strong{
+    float: right;
+}

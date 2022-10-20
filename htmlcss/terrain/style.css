@@ -1,0 +1,90 @@
+body{
+    width: 1000px;
+    height: 600px;
+    text-align: center;
+    color: white;
+}
+
+.haut{
+    background-color: red;
+    height: 100px;
+    line-height: 100px;
+}
+
+.gauche{
+    width: 247px;
+    height: 500px;
+    line-height: 500px;
+    background-color: blue;
+    float: left;
+    margin-right: 1px;
+}
+
+.z1{
+    width: 100px;
+    height: 400px;
+    line-height: 500px;
+    background-color: green;
+    float: left;
+    margin-right: 1px;
+    margin-top: 1px;
+}
+
+.z2{
+    width: 100px;
+    height: 400px;
+    line-height: 500px;
+    background-color: green;
+    float: left;
+    margin-right: 1px;
+    margin-top: 1px;
+}
+
+.z3{
+    width: 100px;
+    height: 400px;
+    line-height: 500px;
+    background-color: green;
+    float: left;
+    margin-right: 1px;
+    margin-top: 1px;
+}
+
+.z4{
+    width: 100px;
+    height: 400px;
+    line-height: 500px;
+    background-color: green;
+    float: left;
+    margin-right: 1px;
+    margin-top: 1px;
+}
+
+.z5{
+    width: 100px;
+    height: 400px;
+    line-height: 500px;
+    background-color: green;
+    float: left;
+    margin-right: 1px;
+    margin-top: 1px;
+}
+
+.droite{
+    width: 247px;
+    height: 500px;
+    line-height: 500px;
+    background-color: blue;
+    float: left;
+    
+}
+
+.bas{
+    background-color: rgb(255, 230, 0);
+    width: 504px;
+    height: 99px;
+    line-height: 100px;
+    position: absolute;
+    margin-left: 248px;
+    margin-top: 402px;
+}
