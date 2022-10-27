@@ -1,0 +1,47 @@
+body{
+    height: 100%;
+    text-indent: 20px;
+    display: flex;
+}
+
+header{
+    background-color: green;
+    height: 20%;
+}
+
+nav{
+    background-color: orange;
+    color: white;
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+ul li:hover{
+    background-color: rgba(255,255,255,0.5);
+    color: orange;
+}
+
+article{
+    height: 80%;
+}
+
+aside{
+    background-color: orange;
+    display: flex;
+}
+
+footer{
+    background-color: green;
+    height: 45%;
+}
+
+.p2{
+    display: flex;
+    height: 80%;
+}
+
+.p3{
+    height: 80%;
+}

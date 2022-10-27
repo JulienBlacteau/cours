@@ -1,0 +1,41 @@
+body{
+    color: white;
+    width: 1000px;
+}
+
+header{
+    background-color: rgb(146, 239, 182);
+    width: 100%;
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(7, 222, 222);
+    width: 20%;
+    float: left;
+}
+
+ul{
+    list-style-type: none;
+}
+
+article{
+    background-color: purple;
+    width: 80%; 
+    flex: auto;
+}
+
+footer{
+    background-color: orange;
+    width: 100%;
+    display: flex;
+}
+
+section
+{ 
+    display : flex; 
+}
+
+li {
+    border-bottom: solid 1px;
+}

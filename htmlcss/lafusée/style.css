@@ -1,0 +1,20 @@
+body{
+    color: white;
+    width: 1200px;
+    height: 400px;
+    display: flex;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100px;
+} 
+
+div{
+    border: 2px solid white;
+    height: 100%;
+    border-radius: 10px;
+    background-color: blue;
+}

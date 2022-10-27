@@ -1,0 +1,118 @@
+Tableau Damier[7,7] en Booléen
+Tableau Mouv[3,1] en Entier
+Variable MoveOK en Booléen
+Variable I, J, I2, J2, PosI, PosJ, IndiceMove en Numérique
+
+// Créer une fonction pour vérifier si l'utilisateur place bien son pion au début de partie
+Fonction PositionDepart(Axe en Caractère, Valeur en Entier) en Entier
+// Si le pion est en dehors du damier on demande de ressaisir les coordonnéees
+TantQue (Valeur < 0) OU (Valeur > 7)
+    Ecrire ''Choisir une '', Axe ,'' (entre 0 et 7)''
+    Si Axe=''Ligne'' Alors
+        Lire PosI
+        // La variable Valeur est mise à jour pour voir si la nouvelle position est dans le damier
+        Valeur <- PosI
+    SinonSi Axe=''Colonne'' Alors
+        Lire PosJ
+        Valeur <- PosJ
+    FinSi
+FinTantQue
+// Retourner le résultat en fonction qu'il s'agisse de l'axe colonne ou ligne
+Si Axe=''Ligne'' Alors
+    PosI <- Valeur
+    Retourner PosI
+SinonSi Axe=''Colonne'' Alors
+    PosJ <- Valeur
+    Retourner PosJ
+FinSi
+FinFonction
+
+// Créer une fonction pour afficher le damier et le pion
+Fonction AfficherDamier() en Caractère
+Pour I <- 0 à 7
+    Pour J <- 0 à 7
+        Si Damier[I,J] = FAUX Alors
+            // Case Libre
+            Ecrire ''X''
+        Sinon
+            // Case occupée
+            Ecrire ''O''
+        FinSi
+    J Suivant
+I Suivant
+FinFonction
+
+// Calcul la nouvelle position de I ou J en fonction de la direction indiquée par l'utilisateur (présent dans tableau Mouv[])
+Fonction NouvellePosition(Indice en Entier, Axe en Caractère, ValeurInitiale en Entier) en Entier
+Si Axe =''Ligne''Alors
+    I2 <- ValeurInitiale + Mouv[Indice, 0]
+    Retourner I2
+SinonSi =''Colonne'' Alors
+    J2 <- ValeurInitiale + Mouv[Indice, 1]
+    Retourner J2
+FinSi
+FinFonction
+
+Debut
+// Initialiser le damier en définissant les cases libres (FAUX)
+Pour I <- 0 à 7
+    Pour J <- 0 à 7
+        Damier[I,J] <- FAUX
+    J Suivant
+I Suivant
+
+// Initialiser le tableau pour les mouvements
+Mouv[0,0] <- -1
+Mouv[0,1] <- -1
+Mouv[1,0] <- 1
+Mouv[1,1] <- -1
+Mouv[2,0] <- -1
+Mouv[2,1] <- 1
+Mouv[3,0] <- 1
+Mouv[3,1] <- 1
+
+// Placer le pion sur le plateau
+Ecrire ''Où voulez commencer la partie ?''
+Ecrire ''Choisir une ligne (entre 0 et 7)''
+Lire PosI
+PosI <- PositionDepart(''Ligne'', PosI)
+Ecrire ''Choisir une colonne (entre 0 et 7)''
+Lire PosJ
+PosJ <- PositionDepart(''Colonne'', PosJ)
+// Déclarer que la case choisie est maintenant occupée
+Damier[PosI, PosI] <- VRAI
+Ecrire ''Vous commencez la partie en position'', PosI, '','', PosJ
+// Afficher le damier
+AfficherDamier()
+
+// Créer une partie, celle-ci s'arrète lors d'un mauvais déplacement alors MoveOK devient FAUX
+MoveOK <- VRAI
+TantQue MoveOK = VRAI
+    Ecrire''Choisir un mouvement, 0 pour en haut à gauche, 1 pour en haut à droite, 2 pour en bas à gauche et 3 pour en bas à droite''
+    Lire IndiceMove
+    // Calculer la nouvelle position du pion
+    I2 <- NouvellePosition(IndiceMove, ''Ligne'', PosI)
+    J2 <- NouvellePosition(IndiceMove, ''Colonne'', PosJ)
+    //Vérifier si la nouvelle coordonnée en I et J est valide (dans le damier) 
+    Si ((I2 OU J2) > 7) OU (I2 OU J2 < 0)) Alors
+        Ecrire ''Vous êtes sortis du damier. La partie est finie.''
+        // Arreter la boucle et mettre fin à la partie
+        MoveOK <- FAUX
+    FinSi
+    //Vérifier si la nouvelle coordonnée en I,J est libre 
+    Si Damier[I2,J2] = VRAI Alors
+        Ecrire ''Vous vous êtes déplacés sur un autre pion. La partie est finie.''
+        MoveOK <- FAUX
+    FinSi
+    // L'ancienne case occupée devient innocupée
+    Damier[I,J] <- FAUX
+    // La nouvelle case devient occupée
+    Damier[I2,J2] <- VRAI
+    // Changer les coordonnées du pion
+    PosI <- I2
+    PosJ <- J2
+    // Afficher le damier
+    AfficherDamier()
+FinTantQue
+Fin
+

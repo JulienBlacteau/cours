@@ -1,0 +1,364 @@
+variable hit : nombre entier
+variable float : nombre entier + decimal
+type booleen : vrai/faux (true/false , 1/0)
+lecture "..." ecriture
+
+
+variable nb en entier
+Debut
+ecriture "entrer un nombre"
+lecture nb
+carrée <-- nb*nb
+ecriture "le carree de nb"=,carre
+Fin
+
+
+
+variable prenom en caractère
+debut
+ecriture "Quel est votre prénom"
+lecture prenom
+ecriture "bonjour",prenom,"!"
+fin
+
+
+
+variable prixHT,nbArticle,tauxTVA,prixTTC
+debut
+Ecriture "prixHT"
+lecture prix HT
+Ecriture "nbarticle"
+lecture nb article
+Ecriture "tauxTVA"
+lecture taux TVA
+Lecture "prixTTC"
+TTC <-- (PrixHT + tauxTVA)*nbArticle
+Ecriture "resultat TTC",TTC
+fin
+
+
+variable nombre en entier
+debut
+Ecrire "donner un nombre"
+Lire nombre
+si nombre > 0 alors 
+ecrire "nombre positif"
+sinon 
+ecrire "nombre negatif"
+Finsi
+Fin
+
+
+variable n1, n2 en entier
+debut
+Ecrire entrez 2 nombres
+Lire "n1","n2"
+si (n1 > 0 et n2 > 0) ou (n1 < 0 et n2 < 0) alors
+ecrire "produit positif"
+sinon
+ecrire "produit negatif"
+Finsi
+Fin
+
+
+variable nom1, nom2, nom3 en caractère
+debut
+Ecrire "entrez 3 noms"
+Lire nom1, nom2, nom3
+si nom1 < nom2 et nom2 < nom3 alors
+ecrire "dans l'ordre alphabétique"
+sinon
+ecrire "pas dans l'ordre alphabetique"
+finsi
+fin
+
+
+
+variable nb en entier
+debut
+Ecrire "entrez un nombre"
+Lire nb
+si nb > 0 alors
+ecrire "le nombre est positif"
+sinon si nb < 0 alors
+ecrire "le nombre est negatif"
+sinon
+ecrire "le nombre vaut 0"
+finsi
+fin
+
+
+variable nb1, nb2 en entier
+debut
+Ecrire "entrez 2 nombres"
+Lire n1, n2
+si (n1 > 0 et n2 > 0) ou (n1 < 0 et n2 < 0) alors
+ecrire "produit positif"
+sinon si n1 < 0 ou n2 < 0 alors
+ecrire "produit négatif"
+sinon si n1 = 0 ou n2 = 0 alors
+ecrire "produit nul"
+finsi
+fin
+
+
+variable age en entier
+debut
+Ecrire "age de l'enfant"
+Lire age
+si age = 6 ou age = 7 alors
+ecrire "poussin"
+sinon si age = 8 ou age = 9 alors
+ecrire "pupille"
+sinon si age = 10 ou age = 11
+ecrire "minime"
+sinon si age >= 12
+ecrire "cadet"
+finsi
+fin
+
+TantQue  = boucle
+Pas de alors
+
+variable nombre en entier
+debut
+ecrire " quelle est le nombre ?"
+Lire nombre
+TantQue nombre < 1 ou nombre > 3
+ecrire " réponse erronée"
+lire nombre
+FinTantQue
+ecrire "réponse acceptée"
+Fin
+
+
+variable nombre en entier
+debut
+ecrire " Donner un nombre entre 10 et 20"
+lire nombre
+TantQue nombre < 10 ou nombre > 20
+	si nombre < 10 alors 
+		ecrire "plus grand !"
+	sinon
+		ecrire "plus petit !"
+finsi
+lire nombre
+finTantQue
+ecrire "Parfait !"
+Fin
+
+
+
+
+Pour que le programme affiche les 10 chiffres suivants:
+
+
+variable nombre, final en entier
+debut
+ecrire "Donner un nombre de départ"
+lire nombre
+final <-- nb + 10
+TantQue nombre <= final
+nb <-- nb + 1
+ecrire nb
+finTantQue
+Fin
+
+
+
+variable nbDepart, nbFinal, resultat en entier
+debut
+ecrire "Donner un nombre à multiplier"
+lire nbDepart
+Pour nbFinal <-- 1 à 10 
+Ecrire nbDepart,"x",nbFinal,"=",resultat
+nbFinal suivant
+Fin
+
+
+5.6
+
+variable nbDepart, somme en entier
+debut
+ecrire "Donner un nombre de départ"
+somme = 0
+lire nbDepart
+Pour i <-- 1 à nbDepart
+	somme <-- somme + i
+Si i < nbDepart alors
+ecrire i,"+"
+sinon ecrire i,"="
+finsi
+i suivant
+ecrire somme
+Fin
+
+
+5.8
+
+variable nb, pg, i, ipg en entier
+debut
+pg = 0
+pour i <-- 1 à 20
+Ecrire "entrer un nombre"
+lire nb
+si i=1 ou nb > pg alors
+pg <-- nb
+finsi
+i suivant
+ecrire "le nombre mumero",pg
+fin
+
+
+5.10
+
+
+variable achat, total, paiement, reste, nb10, nb5
+debut
+total = 0
+achat = 1
+nb10 = 0
+nb5 = 0
+TantQue achat < > 0
+alors lire achat
+total <-- total + achat
+finTantQue
+lire paiement
+Reste <-- paiement - total
+TantQue reste > 10
+nb10 <-- nb10 + 1
+reste <-- reste - 10
+finTantQue
+TantQue reste >5
+nb5 <-- nb5 + 1
+reste <-- reste-5
+fintantQue
+ecrire "Monnaie Rendu"
+Fin
+
+
+6.1
+
+tableau note [6] en numerique
+variable tableau, i en entier
+debut
+pour i <-- 0 à 6
+note [i] <-- 0
+i suivant
+fin
+
+6.2
+
+
+tableau note [5] en numerique, i en caractere
+debut
+note[0] <-- "A"
+note[1] <-- "E"
+note[2] <-- "I"
+note[3] <-- "O"
+note[4] <-- "U"
+note[5] <-- "Y"
+fin
+			
+	
+6.4
+
+0 1 2 3  4  5
+0 1 4 9 16 25
+
+Tableau nb[5] en entier
+variable i en entier
+pour i <-- 0 à 5
+nb [i] <-- i*i
+
+
+6.6
+
+0 1 2 3 4 5  6  7
+1 1 2 3 5 8 13 21
+
+6.8
+tableau tab[]
+variable n, i, var, nbp, nbn en entier
+debut
+nbp<--0, nbn<--0
+Ecrire"Ecrire le nombre de valeur"
+lire n
+redim tab [n-1]
+pour i <-- 0 à n-1
+ecrire "entrez la valeur"
+lire var
+tab[i] <-- var
+si tab[i] > 0 alors
+nbp = nbp+1
+sinon
+finsi nbn = nbn + 1
+i suivant
+ecrire "il y a",nbp,"nb positif"
+ecrire "il y a",nbn,"nb negatif"
+fin
+
+6.9
+
+tableau tab[]
+variable nb,i,somme en entier
+debut
+somme <-- 0 
+redim tab [nb-1]
+pour i <-- 0 à nb-1
+pour somme <-- somme + tab[i]
+i suivant
+ecrire "la somme est",somme
+fin
+
+6.13
+
+tableau tab[] 
+variable i, nb, pg, pos, saisie en entier
+début
+Ecrire "choisir un nombre de colonne"
+lire nb
+redim Tab[nb-1]
+pour i <-- 0 à nb-1
+lire saisie
+tab[i] <-- saisie
+i suivant
+pg <-- 0
+pour i <-- -1 à nb-1
+Si tab[i] > tab[pg]
+pg <-- [i]
+finsi
+i suivant
+Ecrire "le nombre le plus grand est", tab[pg], "et occupe la position", tab[pos]
+fin
+
+6.14
+
+tableau tab[]
+variable nb, i, somme, moy, nbSup
+debut
+Ecrire "Entrez les notes de la classe"
+lire nb
+redim Tab [nb-1]
+pour i <-- 0 à nb-1
+Ecrire "notes ?"
+lire notes
+tab[i] <-- notes
+somme <-- 0
+pour somme <-- somme + tab[i]
+i suivant
+
+pour moy <-- somme / nb
+
+pour i <-- 0 à nb-1
+nbSup <-- 0
+si tab[i] > moy
+alors nbSup <-- nbSup + 1
+finsi
+i suivant
+
+Ecrire "le nombre de notes au dessus de la moyenne de la classe est de", nbSup
+fin
+
+
+

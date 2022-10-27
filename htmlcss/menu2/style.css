@@ -1,0 +1,57 @@
+body{
+    width: 100%;
+    height: 1000px;
+    text-indent: 20px;
+}
+
+header{
+    background-color: green;
+    height:20%;
+
+}
+
+.milieu{
+    display: flex;
+    height: 60%;
+}
+
+.milieu>article{
+    flex: 1;
+    order: 2;
+}
+
+.milieu>nav{
+    order: 1;
+}
+
+.milieu>aside{
+    order: 3;
+}
+
+nav{
+    background-color: orange;
+    color: white;
+    width: 20%;
+}
+
+
+ul,li{
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+ul li:hover{
+    background-color: rgba(255,255,255,5);
+    color: orange;
+}
+
+aside{
+    background-color: orange;
+    width: 20%;
+}
+
+footer{
+    background-color: green;
+    height: 20%;
+}

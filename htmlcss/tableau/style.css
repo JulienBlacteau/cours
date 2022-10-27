@@ -1,0 +1,39 @@
+section{
+    width: 900px;
+    min-height: 100vh;
+    font-size: 48px;
+    text-align: center;
+    line-height: 3em;
+    display: flex;
+}
+
+div{
+    width: 100px;
+}
+
+span{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+
+div:nth-of-type(5n+1){
+    background-color: #1abc9c;
+}
+
+div:nth-of-type(5n+2){
+    background-color: #3498db;
+}
+
+div:nth-of-type(5n+3){
+    background-color: #9b59b6;
+}
+
+div:nth-of-type(5n+4){
+    background-color: #e67e22;
+}
+
+div:nth-of-type(5n+5){
+    background-color: #e74c3c;
+}

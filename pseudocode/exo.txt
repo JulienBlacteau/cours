@@ -1,0 +1,61 @@
+11.1
+
+
+Variable somme, n1, n2 , n3, n4, n5 en entier
+Fonction Somme (nb1 en entier, nb2 en entier, nb3 en entier, nb4 en entier, nb5 en entier) en entier
+Renvoyer “nb1 + nb2 + nb3 + nb4 + nb5”
+Debut
+Ecrire “Entrez 5 nombres”
+Lire nb1,nb2,nb3,nb4,nb5
+somme ← nb1 + nb2 + nb3 + nb4 + nb5
+Lire somme
+Ecrire “le résultat est de”, somme
+Fin
+
+___________________________________________________________________
+
+
+11.2
+
+
+variable nblettre, i en numerique,
+fonction nbvoyelle(phrase en caractère) en numerique
+début
+ecrire “ecrivez une phrase”
+lire phrase
+nblettre ← 0
+nblettre ← len(phrase)
+pour i ← 1 à nblettre
+si trouve (“aeiouy”,mid(phrase,i,1)<>0 alors
+nblettre ← nblettre+1
+finsi
+i suivant
+renvoyer nb
+ecrire”le nombre de voyelle est de”, nblettre
+fin fonction
+
+___________________________________________________________________
+
+
+
+11.3
+
+
+fonction trouve(phrase en caractère, mot en caractère)
+variable i, nblettre en entier
+debut
+Ecrire”entrer une phrase”
+lire phrase
+Ecrire “quel caractère voulez-vous trouvez ?”
+Ecrire mot
+a ← phrase
+b ← mot
+nblettre = len(a)-len(b)
+si max > 0 alors
+pour i = 1 a len(a)-len(b)
+renvoyer i
+sinon renvoyer i=0
+finsi
+i suivant
+fin fonction
+fin

@@ -1,0 +1,307 @@
+body {
+    font-family: arial;
+    font-size: 12px; /* CSS taille du texte */
+}
+
+/* CSS bandeau */
+
+.bandeau-text-1 {
+    margin-left: 2%;
+    margin-top: 2%;
+    opacity: 50%;
+}
+
+.bandeau-part-milieu {  /* CSS phone number + logo website */
+    display : flex; 
+    align-items: center;
+    justify-content: space-between; /* CSS space between avec 3 div dont une vide */
+    margin-top:4%; 
+}
+
+.bandeau-part-milieu-phone { /* CSS phone number */
+    border : solid 1px black; 
+    margin-left: 2%;
+    padding: 1%;
+}
+
+.bandeau-part-milieu-phone:hover{ /* CSS  changemnet couleur phone number */
+    background-color: rgb(19, 1, 1);
+    color : white;
+}
+
+.bandeau-part-milieu-logo img{
+    width: 80%;
+    height: 90%;
+}
+
+
+.bandeau-part-milieu-logo:hover{
+    transform : translate(0px,15px);
+    cursor: pointer;
+}
+
+
+.bandeau-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+
+
+.bandeau-menu ul {    /* CSS menu qui est une liste */
+    display : flex;  
+    list-style-type: none;
+}
+
+
+.bandeau-menu ul li {
+    text-align: center;
+    margin-left: 15px;
+}
+
+.bandeau-menu ul li:hover {
+    border-bottom: solid 1px black; /* CSS quand la souris passe sur le menu */
+}
+
+/* FIN CSS bandeau */
+
+/* CSS image colonne + titre */
+
+.part2 {
+    background-image : url(photo-colonne.jpeg);
+    width: 97%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin : auto; 
+}
+
+.encadre-part2 { /* CSS du bloc noir "droit des victimes.." */
+    background: rgb(19, 1, 1);
+    color: white;
+    width: 50%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.encadre-part2-text1 {
+    border-bottom: solid 1px white;
+    margin : 2%;
+    text-align: center;
+}
+
+.encadre-part2-text2 {
+    text-align: center;
+    margin : 2%;
+    font-size: 17px;
+}
+
+
+/* CSS nos domaines d'intervention */
+
+.part3 {
+    background-image : url(BLOC3.jpeg);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4%; 
+    color:white; 
+    text-align: center; 
+}
+
+.part3-text1 { /* nos domaines d'intervention */
+    font-size:17px; 
+}
+
+.part3-letrait{
+
+    background-color: white;
+    width: 10%;
+    height: 3px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+ 
+.part3-blocmilieu {
+    display : flex; 
+    justify-content:space-evenly;
+    align-items: center;
+    font-size: 14px;
+}
+
+.quote {
+    width: 10%;
+    color :white; /* les quote en blanc ça ne marche pas */
+}
+
+
+.part3-text3 {
+    display:flex;
+}
+
+.part3-text3-bloc-image{
+    width: 50px;
+    margin-bottom: 10%;
+}
+
+.part3-text3-bloc1,  /* CSS pour faire le trait blanc au bloc 1 et 2 sur la droite */
+.part3-text3-bloc2 {
+    border-right : solid 1px white; 
+}
+
+.part3-text3-bloc1,  /* CSS pour faire le trait blanc au bloc 1 et 2 sur la droite */
+.part3-text3-bloc2,
+.part3-text3-bloc3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 4%;
+}
+
+.part3-text3-bloc-plus {
+    background-color: rgb(163, 42, 42);
+    border-radius: 50%; /* CSS pour faire les ronds */
+    width: 20px;
+    height: 20px;
+    line-height : 20px;
+    text-align: center; 
+    margin-top: 15%;
+}
+
+.part3-text3-bloc-plus:hover { /* CSS quand la souris passe sur les Plus rouge */
+    background-color: white;
+    color : #26223B; 
+}
+
+/* CSS partie 4 "un cabinet d'avocat ..."*/
+
+.part4{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.part4-text1 { /* CSS partie 4 titre */
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 4%;
+}
+
+.part4-text3 { /* CSS partie 4 image et texte de droite */
+ display: flex;
+ margin-top: 4%;
+}
+
+.part4-img {
+    width: 40%;
+}
+
+.part4-bloc-droite {
+    margin-left: 5%;
+   display: flex;
+   flex-direction: column; 
+}
+
+.part4-bloc-droite-titre {
+    color: rgb(163, 42, 42);
+    font-size: 15px;
+    margin-bottom: 2%;
+}
+
+.part4-text4 {
+    color: rgb(163, 42, 42);
+    background-color: rgb(216, 214, 214);
+    border-left: solid 2px black;
+    margin-top: 3%;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+}
+
+.part4-bouton {
+    border : solid 1px black;
+    font-weight: bold;
+    margin-top: 2%;
+    padding: 2%;
+    width: 20%;
+    text-align: center;
+    margin-left: 36%;
+}
+
+/* CSS partie 5 Logo / navigation / nous contacter  */
+
+.part5 {  /* CSS partie 5 en flex  */
+    margin-top: 6%;
+    display : flex; 
+    background-color: rgb(216, 214, 214);
+    width: 100%;
+}
+
+.part5-list-menu a {    /* CSS les liens : pour enlever les soulignements  */
+    text-decoration: none;
+    color : black; 
+}
+
+.part5-logo, 
+.part5-bloc {
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
+
+.part5-logo-taille {
+    width: 100%;
+}
+
+.part5-bloc {
+    display: flex;
+    flex-direction: column;
+}
+
+.part5-list-menu {
+    display: flex;
+    align-content: flex-start;
+    color: black;
+}
+
+.part5-titre {
+    font-size: 17px;
+}
+
+.part5-list-menu-gauche,
+.part5-list-menu-droite, 
+.part5-list-menu
+ ul li {
+    list-style-type:disclosure-closed;
+    margin-top: 3px;
+}
+
+.part5-trait {
+    background-color: rgb(163, 42, 42);
+    width: 25%;
+    height: 3px;
+    margin-top: 2%;
+}
+
+.bandeaufooter{
+    background-image : url(BLOC3.jpeg);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white; 
+    text-align: center; 
+}
